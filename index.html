@@ -20,21 +20,21 @@
         <h4 class="my-5">Contador: <span id="span">0</span></h4>
     </div>
     <script>
-        const btnAumentar = document.querySelector(".btn-info")
-        const btnDisminuir = document.querySelector(".btn-danger")
+        const container = document.querySelector(".container")
         const span = document.getElementById("span")
         let cont = 0
                 
-        btnAumentar.addEventListener('click', () => {
-            console.log('me diste clic')
-            cont ++
-            span.textContent = cont
-        })
-        
-        btnDisminuir.addEventListener('click', () => {
-            console.log('me diste clic negativo')
-            cont --
-            span.textContent = cont
+        container.addEventListener("click", e => {
+            console.log(e.target.classList.contains("btn-info"))
+            if (e.target.classList.contains("btn-info")){
+                cont ++
+                span.textContent = cont
+            }
+            if (e.target.classList.contains("btn-danger")){
+                cont --
+                span.textContent = cont
+            }
+
         })
 
     </script>
