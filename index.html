@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carro de la compra</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="shortcut icon" href="#"> <!-- soluciona un error que me daba con un favicon.ico no encontrado -->
+
+</head>
+<body>
+    <div class="container py-5 bg-warning text-center">
+        <h1>Contador</h1>
+        <button class="btn btn-info">
+            Aumentar
+        </button>
+        <button class="btn btn-danger">
+            Disminuir
+        </button>
+        <h4 class="my-5">Contador: <span id="span">0</span></h4>
+    </div>
+    <script>
+        const btnAumentar = document.querySelector(".btn-info")
+        const btnDisminuir = document.querySelector(".btn-danger")
+        const span = document.getElementById("span")
+        let cont = 0
+                
+        btnAumentar.addEventListener('click', () => {
+            console.log('me diste clic')
+            cont ++
+            span.textContent = cont
+        })
+        
+        btnDisminuir.addEventListener('click', () => {
+            console.log('me diste clic negativo')
+            cont --
+            span.textContent = cont
+        })
+
+    </script>
+</body>
+</html>
