@@ -177,5 +177,5 @@ const botonesCarrito = e => {
         pintarCarrito()
     }
     
-    /* e.stopPropagation() */
+    e.stopPropagation()
 }
