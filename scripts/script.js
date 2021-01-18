@@ -124,7 +124,7 @@ const pintarFooter = () => {
     /* Si el carrito está vacío, pintamos con template strings simplemente eso */
     if (Object.keys(carrito).length === 0){
         footer.innerHTML =
-        `<th scope="row" colspan="5">Carrito vacío - comience a compraaaar!</th>`
+        `<th scope="row" colspan="5">Carrito vacío - comienza a comprar!</th>`
         return /* con este return hacemos que no siga ejecutando la función */
     }
 
