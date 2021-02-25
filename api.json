@@ -3,7 +3,7 @@
       "precio": 500,
       "id": 1,
       "title": "Café",
-      "thumbnailUrl": "imagenes/Cafe.jpg"
+      "thumbnailUrl": "imagenes/cafe.jpg"
     },
     {
       "precio": 300,
@@ -33,7 +33,7 @@
       "precio": 150,
       "id": 6,
       "title": "Cerveza",
-      "thumbnailUrl": "imagenes/cerveza.webp"
+      "thumbnailUrl": "imagenes/cerveza.jpg"
     }
   ]
   
