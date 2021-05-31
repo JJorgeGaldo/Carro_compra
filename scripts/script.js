@@ -49,7 +49,6 @@ const fetchData = async() => {
     }catch (error){
         console.log(error)
     }
-    
 }
 
 /* 4- Recogemos la info del json y la renderizamos con el template del HTML utilizando frament
