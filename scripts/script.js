@@ -90,7 +90,7 @@ const setCarrito = objeto =>{
     if(carrito.hasOwnProperty(producto.id)){ /* comprueba si el elemento sobre el que hemos pinchado está actuamente en el carrito, y si es así le añade uno a cantidad, no lo pinta otra vez */
         producto.cantidad =carrito[producto.id].cantidad + 1
     }
-    carrito[producto.id] = {...producto} /* se crea una copia de producto para el carrito. IINVESTIGAR ESTO DE LOS ... NO ENTIENDO MUY BIEN. Creo que se llama sprite operator */
+    carrito[producto.id] = {...producto} //! se crea una copia de producto para el carrito. IINVESTIGAR ESTO DE LOS ... NO ENTIENDO MUY BIEN. Creo que se llama sprite operator
     pintarCarrito()
 }
 
